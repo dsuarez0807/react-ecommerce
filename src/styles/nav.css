@@ -1,6 +1,11 @@
-.topnav {
-    background-color: #333;
-    overflow: hidden;
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
   .navbar a {
     float: left;
