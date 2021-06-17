@@ -1,15 +1,18 @@
-import "./App.css"
+import React from "react"
 import NavBar from './components/NavBar'
-import ItemsListcontainer from './components/ItemsListcontainer'
-// import UseState from './components/UseState'
+import {ItemsListcontainer} from './components/ItemsListcontainer'
+import {CartWidget} from './components/CartWidget'
 
-function App() {
-  return (
-    <div className="App">
-      <NavBar />
-      <ItemsListcontainer/>
-    </div>
-  );
+const App = props => {
+
+  return <>
+
+  <NavBar>
+  <CartWidget/>
+  </NavBar>
+  <ItemsListcontainer/>
+ 
+  </>
 }
 
 export default App;

@@ -1,12 +1,14 @@
-import React from 'react';
-import carticon from '../assets/carticon.svg'
+  import React from 'react'
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
+import Badge from '@material-ui/core/Badge'
 
-function CartWidget(props) {
-    return (
-        <div>
-            <img src={carticon} alt="" width="24"/>
-        </div>
-    );
+export const CartWidget = props => {
+    return <>
+    <Badge badgeContent={5} color="secondary">
+      <ShoppingCartIcon/>
+    </Badge>
+    
+    </>
 }
 
 export default CartWidget;

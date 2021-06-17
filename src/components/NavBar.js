@@ -5,7 +5,7 @@ import CartWidget from '../components/CartWidget'
 export default function NavBar(){
     return(
         <nav className="navbar">
-        <a className="active" href="#home">PetShop</a>
+        <a className="active" href="#home">Shoestore</a>
         <a href="#news">Productos</a>
         <a href="#contact">Promociones</a>
         <a href="#about">About</a>
