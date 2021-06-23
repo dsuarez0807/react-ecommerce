@@ -1,10 +1,10 @@
-  
 import React, {useState, useEffect} from 'react';
 import { makeStyles } from '@material-ui/core';
 import { ItemDetailContainerStyles } from './ItemDetailContainerStyles';
 import {ItemDetail} from './ItemDetails';
 import Grid from '@material-ui/core/Grid';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import {useParams} from 'react-router-dom';
 
 
 
@@ -31,17 +31,21 @@ const myPromise = () => {
 };
 
 export const ItemDetailContainer = () => {
+    
 
     const classes = useStyles();
 
     const [data, setData] = useState([]);
+
+    const { id } = useParams();
+
 
     const iniciarDetailList = () => {
 
         myPromise().then(data => {setData(data)})
     }
 
-        useEffect(() => {iniciarDetailList()}, [])
+        useEffect(() => {iniciarDetailList()}, [id])
     
     
         return <>
