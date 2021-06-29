@@ -1,15 +1,14 @@
 import React from 'react'
 import '../styles/nav.css'
-import CartWidget from '../components/CartWidget' 
-import {Link} from 'react-router-dom'
+//import CartWidget from '../components/CartWidget' 
+import {Link} from 'react-router-dom';
 
 export default function NavBar(){
     return(
         <nav className="navbar">
         <Link exact to="/">Shoestore</Link>
-        <Link activeClassName="active" to="/About">About</Link>
+        <Link to="/About">About</Link>
         <Link to="/Products">Products</Link>
-        <Link to="/"><CartWidget></CartWidget></Link>
         </nav>
     )
-}
+};
